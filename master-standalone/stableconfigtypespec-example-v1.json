@@ -1,0 +1,42 @@
+{
+  "description": "StableConfigTypeSpec is the desired state",
+  "type": "object",
+  "required": [
+    "evolvingUnion"
+  ],
+  "properties": {
+    "coolNewField": {
+      "description": "coolNewField is a field that is for tech preview only.  On normal clusters this shouldn't be present",
+      "type": [
+        "string",
+        "null"
+      ],
+      "default": ""
+    },
+    "evolvingUnion": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "required": [
+        "type"
+      ],
+      "properties": {
+        "type": {
+          "description": "type is the discriminator. It has different values for Default and for TechPreviewNoUpgrade",
+          "type": "string",
+          "default": ""
+        }
+      }
+    },
+    "stableField": {
+      "description": "stableField is a field that is present on default clusters and on tech preview clusters\n\nIf empty, the platform will choose a good default, which may change over time without notice.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "default": ""
+    }
+  },
+  "$schema": "http://json-schema.org/schema#"
+}

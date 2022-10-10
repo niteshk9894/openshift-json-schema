@@ -1,0 +1,65 @@
+  240  openapi2jsonschema https://raw.githubusercontent.com/kubernetes/kubernetes/master/api/openapi-spec/swagger.json
+  249  openapi2jsonschema https://raw.githubusercontent.com/openshift/api/master/openapi/openapi.json
+  325  openapi2jsonschema -o "master-standalone" --expanded --kubernetes --stand-alone https://raw.githubusercontent.com/openshift/api/master/openapi/openapi.json
+  327  cd master-standalone/
+  330  /home/ubuntu/kubeconform/bin/kubeconform -schema-location /root/go/bin/master-standalone /root/go/bin/testdc.yaml 
+  335  bin/kubeconform -schema-location /root/go/bin/master-standalone /root/go/bin/testdc.yaml 
+  342  openapi2jsonschema -o "master-standalone" --kubernetes --stand-alone https://raw.githubusercontent.com/openshift/api/master/openapi/openapi.json
+  352  bin/kubeconform -schema-location /root/go/bin/master-standalone /root/go/bin/testdc.yaml 
+  354  bin/kubeconform -schema-location /root/go/bin/master-standalone /root/go/bin/testdc.yaml 
+  356  bin/kubeconform -schema-location /root/go/bin/master-standalone /root/go/bin/testdc.yaml 
+  359  bin/kubeconform -schema-location /root/go/bin/master-standalone /root/go/bin/testdc.yaml 
+  362  bin/kubeconform -schema-location /root/go/bin/master-standalone /root/go/bin/testdc.yaml 
+  363  cd /root/go/bin/master-standalone/
+  367  bin/kubeconform -schema-location /root/go/bin/master-standalone /root/go/bin/testdc.yaml 
+  368  vi /root/go/bin/master-standalone/master-standalone/deploymentconfig-v1.json
+  369  cd /root/go/bin/master-standalone/
+  370  vi /root/go/bin/master-standalone/master-standalone/deploymentconfig-v1.json
+  374  bin/kubeconform -schema-location /root/go/bin/master-standalone /root/go/bin/testdc.yaml 
+  375  vi /root/go/bin/master-standalone/master-standalone/deploymentconfig-v1.json 
+  376  vi /root/go/bin/master-standalone/master-standalone/deploymentconfig-v1.json
+  421  rm -rf master-standalone/
+  423  openapi2jsonschema -o "master-standalone"  --expanded --kubernetes --stand-alone https://raw.githubusercontent.com/openshift/api/master/openapi/openapi.json
+  425  cd master-standalone/
+  429  openapi2jsonschema -o "master1-standalone"  --expanded --stand-alone https://raw.githubusercontent.com/openshift/api/master/openapi/openapi.json
+  431  rm -rf master1-standalone/
+  432  openapi2jsonschema -o "master1-standalone"  --kubernetes --stand-alone https://raw.githubusercontent.com/openshift/api/master/openapi/openapi.json
+  433  rm -rf master1-standalone/
+  434  cd master-standalone/
+  442  ./kubeconform -schema-location master-standalone testdc.yaml 
+  443  cd master-standalone/
+  475  openapi2jsonschema -o "master1-standalone"  --kubernetes --stand-alone https://raw.githubusercontent.com/openshift/api/master/openapi/openapi.json
+  492  openapi2jsonschema -o "master1-standalone" --kubernetes --stand-alone https://raw.githubusercontent.com/openshift/api/release-4.13/openapi/openapi.json
+  493  rm-rf master1-standalone/
+  494  rm -rf master1-standalone/
+  496  openapi2jsonschema -o "master1-standalone" --expanded --kubernetes --stand-alone https://raw.githubusercontent.com/openshift/api/release-4.13/openapi/openapi.json
+  497  rm -rf master1-standalone/
+  498  openapi2jsonschema -o "master1-standalone" --expanded --kubernetes --stand-alone https://raw.githubusercontent.com/openshift/origin/release-4.1/api/swagger-spec/openshift-openapi-spec.json
+  500  cd master
+  502  cd master-standalone/
+  507  /home/ubuntu/kubeconform/bin/kubeconform -schema-location /root/go/bin/master-standalone testdc.yaml 
+  508  /home/ubuntu/kubeconform/bin/kubeconform -schema-location /root/go/bin/master-standalone testr.yaml 
+  511  /home/ubuntu/kubeconform/bin/kubeconform -schema-location /root/go/bin/master-standalone testdc.yaml 
+  520  cd master-standalone/
+  523  openapi2jsonschema -o "master-standalone" --expanded --kubernetes --stand-alone https://raw.githubusercontent.com/kubernetes/kubernetes/${version}/api/openapi-spec/swagger.json
+  524  openapi2jsonschema -o "master-standalone" --expanded --kubernetes --stand-alone https://raw.githubusercontent.com/kubernetes/kubernetes/v1.25.1/api/openapi-spec/swagger.json
+  525  openapi2jsonschema -o "master-standalone" --kubernetes --stand-alone https://raw.githubusercontent.com/kubernetes/kubernetes/v1.25.1/api/openapi-spec/swagger.json
+  529  cd master
+  545  cd /root/go/bin/master-standalone/
+  551  ./kubeconform -schema-location /root/go/bin/master-standalone testdc.yaml 
+  631  cd master-standalone/
+  710  mkdir master-standalone
+  711  cp -r /root/go/bin/master-standalone/ master-standalone/
+  712  cd master-standalone/
+  715  rm -rf master-standalone/
+  716  cp -r /root/go/bin/master-standalone/ master-standalone/
+  718  cd master-standalone/
+ 1196  history | grep master
+ 1199  cd master1-standalone/
+ 1203  cd master-standalone/
+ 1213  history | grep master
+ 1218  ./kubeconform -schema-location /root/go/bin/master-standalone tt.yaml 
+ 1220  cd /root/go/bin/master-standalone
+ 1225  history | grep master
+ 1227  history | grep master
+ 1228  history | grep master > test.yaml

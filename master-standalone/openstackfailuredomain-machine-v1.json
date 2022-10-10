@@ -1,0 +1,18 @@
+{
+  "description": "OpenStackFailureDomain configures failure domain information for the OpenStack platform",
+  "type": "object",
+  "required": [
+    "availabilityZone"
+  ],
+  "properties": {
+    "availabilityZone": {
+      "description": "The availability zone from which to launch the server.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "default": ""
+    }
+  },
+  "$schema": "http://json-schema.org/schema#"
+}
