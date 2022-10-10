@@ -1,0 +1,19 @@
+{
+  "description": "ConsolePluginI18n holds information on localization resources that are served by the dynamic plugin.",
+  "type": "object",
+  "required": [
+    "loadType"
+  ],
+  "properties": {
+    "loadType": {
+      "description": "loadType indicates how the plugin's localization resource should be loaded.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "default": ""
+    }
+  },
+  "additionalProperties": false,
+  "$schema": "http://json-schema.org/schema#"
+}
